@@ -5,7 +5,7 @@
 
   # Instalar Dependencias
   ```
-    pnpm install express multer  
+    pnpm install express multer ejs path
   ```
 
   # Iniciar Proyecto

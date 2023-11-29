@@ -6,12 +6,15 @@
     <title>Detalles del archivo</title>
 </head>
 <body>
-    <h1>Detalles del archivo cargado</h1>
-    <ul>
-        <li><strong>Nombre:</strong> <%= fileInfo.filename %></li>
-        <li><strong>Nombre:</strong> <%= fileInfo.name %></li>
-        <li><strong>Tamaño:</strong> <%= fileInfo.size %> bytes</li>
-        <li><strong>Tipo:</strong> <%= fileInfo.type %></li>
-    </ul>
+    <h1>Detalles de los archivos cargados</h1>
+    <% fileDetails.forEach(fileInfo => { %>
+        <ul>
+            <li><strong>Nombre:</strong> <%= fileInfo.filename %></li>
+            <li><strong>Nombre original:</strong> <%= fileInfo.name %></li>
+            <li><strong>Tamaño:</strong> <%= fileInfo.size %> bytes</li>
+            <li><strong>Tipo:</strong> <%= fileInfo.type %></li>
+        </ul>
+        <hr>
+    <% }); %>
 </body>
 </html>
